@@ -1,0 +1,68 @@
+# 仓库根级 .gitignore —— 通用忽略项，覆盖所有子项目
+# 各子项目另有自己的 .gitignore 处理特有细节
+
+# ----- OS -----
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# ----- IDE / 编辑器 -----
+.idea/
+# 用 /* 形式以便子项目能用 !.vscode/extensions.json 重新纳入
+.vscode/*
+!.vscode/extensions.json
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ----- Python -----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# ----- Node / 前端 -----
+node_modules/
+.vite/
+.next/
+coverage/
+*.local
+
+# 注：锁文件（pnpm-lock.yaml / package-lock.json / uv.lock）应纳入版本控制，不在此忽略
+
+# ----- 构建产物 -----
+build/
+dist/
+
+# ----- 日志 -----
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ----- 环境变量（保留 *.example）-----
+.env
+.env.*
+!.env.example
+
+# ----- Claude Code 本地设置 -----
+.claude/settings.local.json
