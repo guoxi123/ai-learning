@@ -11,7 +11,6 @@ ai-learning/
 ├── project/                    子项目（各自独立，无共享构建）
 │   ├── memory/                 长对话上下文压缩
 │   ├── sse-markdorm/           LLM 流式渲染
-│   └── deep-research/          DeepResearch Agent
 ├── .gitignore                  仓库级通用忽略规则
 └── README.md                   本文档
 ```
@@ -22,7 +21,6 @@ ai-learning/
 |---|---|---|---|
 | [project/memory](project/memory/) | 长对话上下文压缩 | Python · MySQL | 原始消息永不丢失，以「原始表 + 压缩表 + 映射表 + 缓存表」四层架构实现可追溯、可版本化、分层的上下文压缩。详见 [TECH_DESIGN](project/memory/TECH_DESIGN.md) |
 | [project/sse-markdorm](project/sse-markdorm/) | LLM 流式渲染 | React 19 · FastAPI · SSE · DeepSeek | 自然语言提问 → 后端调 LLM → 前端逐字流式渲染，重点解决 Markdown 表格在流式生长过程中的格式抖动与错位。详见 [README](project/sse-markdorm/README.md) |
-| [project/deep-research](project/deep-research/) | DeepResearch Agent | LangGraph · React · FastAPI | 用 LangGraph 搭建多节点（生成查询 → 联网搜索 → 批判 → 综合作答）的深度研究 Agent。详见 [README](project/deep-research/README.md) |
 
 各子项目的**安装与运行步骤各不相同**（依赖、端口、所需的 API Key 都不一样），请进入对应目录参阅其 README。
 
