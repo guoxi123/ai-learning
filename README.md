@@ -29,6 +29,7 @@ ai-learning/
 - [docs/agent-teams-vs-subagents.md](docs/agent-teams-vs-subagents.md) — Agent Teams 与 Subagents 的区别与选型
 - [docs/sse-vs-websocket.md](docs/sse-vs-websocket.md) — SSE 与 WebSocket 实时推送选型
 - [docs/rag-architecture.md](docs/rag-architecture.md) — 企业级 RAG 知识库架构设计
+- [docs/fde.md](docs/fde.md) — FDE 向前部署工程师方法论（Copilot 项目贯穿案例）
 
 ## 仓库约定
 
